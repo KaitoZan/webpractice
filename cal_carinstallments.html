@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="cal_carinstallments">
+    <meta name="description" content="carinstallmentsCalculater">
+    <meta name="author" content="Dusit6552410011" />
+    <link rel="stylesheet" href="./css/s">
+    <link rel="shortcut icon" href="./images/car.png" type="image/x-icon">
+    <title>Car Installments Calulator</title>
+</head>
+
+<body>
+    <h1>CAR INSTALLMENTS</h1>
+    <img src="./images/car.png" alt="">
+    <br><br>
+    <hr>
+    <br>
+    <form onsubmit="return false" action="">
+        ป้อนชื่อ : <input type="text" name="" id="name"required>
+        <br><br>
+        ป้อนนามสกุล : <input type="text" name="" id="Lastname"required>
+        <br><br>
+        <div>
+            <label>
+                เลือกยี่ห้อรถ :
+                <label>
+                    <input type="radio" name="car" id="" checked>
+                    Honda
+                </label>
+                <label>
+                    <input type="radio" name="car" id="">
+                    Toyota
+                </label>
+                <label>
+                    <input type="radio" name="car" id="">
+                    MG
+                </label>
+                <label>
+                    <input type="radio" name="car" id="">
+                    Mazda
+                </label>
+                <label>
+                    <input type="radio" name="car" id="">
+                    ISUZU
+                </label>
+                <label>
+                    <input type="radio" name="car" id="">
+                    Nissan
+                </label>
+        </div>
+        <br>
+        ราคารถ : <input type="number" name="" id="price"required> บาท
+        <br><br>
+        จำนวนเงินดาวน์ (%) : <input type="number" name="" id="down"required>
+        <br><br>
+        จำนวนปีที่ผ่อน 12-84 งวด : <select name="cars" id="downYear">
+            <option value="1">12 งวด (1ปี)</option>
+            <option value="2">24 งวด (2ปี)</option>
+            <option value="3">36 งวด (3ปี)</option>
+            <option value="4">48 งวด (4ปี)</option>
+            <option value="5">60 งวด (5ปี)</option>
+            <option value="6">72 งวด (6ปี)</option>
+            <option value="7">84 งวด (7ปี)</option>
+        </select>
+        <br><br>
+        ดอกเบี้ย (%) ต่อปี: <input type="number" name="" id="interest"required>
+        <br><br>
+        <button id="btn-result">คำนวณ</button>
+        <button id="btn-cancel">ยกเลิก</button>
+    </form>
+    <br>
+    <hr>
+    <div>
+        <p>ผลการคำนวณเบื้องต้น</p>
+        สวัสดีคุณ : <span id="name1" >XXXXX</span>
+        <br><br>
+        คุณได้เลือกรถยี่ห้อ : <span id="car1">XXXXX</span>
+        <br><br>
+        ใช้เงินดาวน์ : <span id="down1">XXXXX</span> บาท
+        <br><br>
+        คิดเป็นยอดจัดไฟแนนซ์ : <span id="FinanceSum">XXXXX</span> บาท
+        <br><br>
+        คิดเป็นค่างวดต่อเดือน : <span id="permonth">XXXXX</span> บาท
+    </div>
+
+
+
+    <script src="./js/script_carinstallments.js"></script>
+</body>
+
+</html>
